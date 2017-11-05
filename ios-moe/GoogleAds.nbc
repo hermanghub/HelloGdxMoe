@@ -1,0 +1,1 @@
+{"output":"src","platform":"iOS","inline-function-binding-output":"src/native","bindings":[{"type":"framework","name":"GoogleMobileAds","objcClassGenerationMode":"Binding","frameworkPath":"xcode/GoogleMobileAds.framework","packageBase":"org.moe.binding","importCode":"#import <Foundation/Foundation.h>\n#import <UIKit/UIKit.h>\n#import \"GoogleMobileAds/GoogleMobileAds.h\""}]}

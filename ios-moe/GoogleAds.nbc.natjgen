@@ -1,0 +1,193 @@
+{
+  "platform": "iOS",
+  "package-base": "undefined",
+  "base-sdk": "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk",
+  "source": "#import \u003cFoundation/Foundation.h\u003e\n#import \u003cUIKit/UIKit.h\u003e\n#import \"GoogleMobileAds/GoogleMobileAds.h\"\n\n",
+  "output": "src",
+  "inline-function-binding-output": "${PROJECT}/src/native",
+  "header-search-paths": [],
+  "user-header-search-paths": [],
+  "framework-search-paths": [
+    "${PROJECT}/xcode"
+  ],
+  "header-file-resolving-paths": [],
+  "unit-rules": [
+    {
+      "final": true,
+      "conditions": [
+        {
+          "condition": "path-prefix",
+          "value": "${SDK}"
+        }
+      ],
+      "actions": [
+        {
+          "action": "replace-package-base",
+          "value": "apple"
+        },
+        {
+          "action": "handling-mode",
+          "value": "external"
+        }
+      ]
+    },
+    {
+      "final": false,
+      "conditions": [
+        {
+          "condition": "type-match",
+          "value": "objc-class-method"
+        },
+        {
+          "condition": "name-match",
+          "value": "class"
+        }
+      ],
+      "actions": [
+        {
+          "action": "handling-mode",
+          "value": "disabled"
+        }
+      ]
+    },
+    {
+      "final": false,
+      "conditions": [
+        {
+          "condition": "type-match",
+          "value": "objc-class-method"
+        },
+        {
+          "condition": "name-match",
+          "value": "initialize"
+        }
+      ],
+      "actions": [
+        {
+          "action": "handling-mode",
+          "value": "disabled"
+        }
+      ]
+    },
+    {
+      "final": false,
+      "conditions": [
+        {
+          "condition": "type-match",
+          "value": "objc-class-method"
+        },
+        {
+          "condition": "name-match",
+          "value": "load"
+        }
+      ],
+      "actions": [
+        {
+          "action": "handling-mode",
+          "value": "disabled"
+        }
+      ]
+    },
+    {
+      "final": false,
+      "conditions": [
+        {
+          "condition": "type-match",
+          "value": "objc-instance-method"
+        },
+        {
+          "condition": "name-match",
+          "value": "retain"
+        }
+      ],
+      "actions": [
+        {
+          "action": "handling-mode",
+          "value": "disabled"
+        }
+      ]
+    },
+    {
+      "final": false,
+      "conditions": [
+        {
+          "condition": "type-match",
+          "value": "objc-instance-method"
+        },
+        {
+          "condition": "name-match",
+          "value": "release"
+        }
+      ],
+      "actions": [
+        {
+          "action": "handling-mode",
+          "value": "disabled"
+        }
+      ]
+    },
+    {
+      "final": false,
+      "conditions": [
+        {
+          "condition": "type-match",
+          "value": "objc-instance-method"
+        },
+        {
+          "condition": "name-match",
+          "value": "autorelease"
+        }
+      ],
+      "actions": [
+        {
+          "action": "handling-mode",
+          "value": "disabled"
+        }
+      ]
+    },
+    {
+      "final": false,
+      "conditions": [
+        {
+          "condition": "type-match",
+          "value": "objc-instance-method"
+        },
+        {
+          "condition": "name-match",
+          "value": "dealloc"
+        }
+      ],
+      "actions": [
+        {
+          "action": "handling-mode",
+          "value": "disabled"
+        }
+      ]
+    },
+    {
+      "final": true,
+      "conditions": [
+        {
+          "condition": "framework-match",
+          "value": "GoogleMobileAds"
+        }
+      ],
+      "actions": [
+        {
+          "action": "replace-package-base",
+          "value": "org.moe.binding"
+        }
+      ]
+    },
+    {
+      "final": true,
+      "conditions": [],
+      "actions": [
+        {
+          "action": "handling-mode",
+          "value": "disabled"
+        }
+      ]
+    }
+  ]
+}
